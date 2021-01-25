@@ -1,0 +1,172 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     ANO
+005-006 @sprintf_string
+007     lcd_init.i
+007-008 Temperatura.Temp16Bits
+007     MAIN.@SCRATCH1
+007     @PSTRINGC_651.@SCRATCH1
+008     lcd_init.@SCRATCH1
+008     MAIN.@SCRATCH2
+008     @PSTRINGC_651.@SCRATCH2
+009     Temperatura.Templ
+009     MAIN.@SCRATCH3
+00A     Temperatura.Temph
+00A     MAIN.@SCRATCH4
+00B     @PSTRINGCN_651.P1
+00B-00E Temperatura.decimales
+00B-00E @PRINTF_L32D_9600_31766_31767FPFPF.P1
+00B-00E @PRINTF_L32D_651FPFPFR.P2
+00B     @PSTRINGCN_9600_31766_31767.P3
+00C     @PSTRINGCN_651.@SCRATCH1
+00C     @PSTRINGCN_9600_31766_31767.@SCRATCH1
+00D     @PSTRINGCN_651.@SCRATCH2
+00D     @PSTRINGCN_9600_31766_31767.@SCRATCH2
+00F-012 Temperatura.enteros
+00F     @PRINTF_L32D_9600_31766_31767FPFPF.P1
+00F     @PRINTF_L32D_651FPFPFR.P2
+010     @PRINTF_L32D_651FPFPFR.@SCRATCH1
+010     @PRINTF_L32D_9600_31766_31767FPFPF.@SCRATCH1
+011     @PRINTF_L32D_651FPFPFR.@SCRATCH2
+011     @PRINTF_L32D_9600_31766_31767FPFPF.@SCRATCH2
+012     @PRINTF_L32D_651FPFPFR.@SCRATCH3
+012     @PRINTF_L32D_9600_31766_31767FPFPF.@SCRATCH3
+013-016 Temperatura.Temp
+013     @PRINTF_L32D_651FPFPFR.@SCRATCH4
+013     @PRINTF_L32D_9600_31766_31767FPFPF.@SCRATCH4
+014     @PRINTF_L32D_651FPFPFR.@SCRATCH5
+014     @PRINTF_L32D_9600_31766_31767FPFPF.@SCRATCH5
+015     @PRINTF_L32D_651FPFPFR.@SCRATCH6
+015     @PRINTF_L32D_9600_31766_31767FPFPF.@SCRATCH6
+016     @PRINTF_L32D_651FPFPFR.@SCRATCH7
+016     @PRINTF_L32D_9600_31766_31767FPFPF.@SCRATCH7
+017-018 @SITOF.P1
+017     Temperatura.@SCRATCH1
+017     @PRINTF_L32D_651FPFPFR.@SCRATCH8
+017     @PRINTF_L32D_9600_31766_31767FPFPF.@SCRATCH8
+018-01B @FTOSD.P1
+018-01B @ADDFF.P2
+018-019 @ITOF.P3
+018-01B @DIV3232.P4
+018     lcd_putc.c
+018     Temperatura.@SCRATCH2
+019     lcd_gotoxy.x
+019     @delay_ms1.P1
+019     Temperatura.@SCRATCH3
+01A     lcd_gotoxy.y
+01A     Temperatura.@SCRATCH4
+01B     lcd_gotoxy.address
+01B-01E @MULFF.P1
+01C-01F @ADDFF.P1
+01C-01F @DIV3232.P2
+01C     lcd_gotoxy.@SCRATCH1
+01C     @FTOSD.@SCRATCH1
+01D     lcd_send_byte.address
+01E     lcd_send_byte.n
+01F-022 @MULFF.P1
+01F     lcd_send_byte.@SCRATCH1
+020     lcd_send_nibble.nibble
+020     @ADDFF.@SCRATCH1
+020     @DIV3232.@SCRATCH1
+021     @ADDFF.@SCRATCH2
+021     @DIV3232.@SCRATCH2
+022     @ADDFF.@SCRATCH3
+022     @DIV3232.@SCRATCH3
+023     @MULFF.@SCRATCH1
+023     @ADDFF.@SCRATCH4
+023     @DIV3232.@SCRATCH4
+024     @MULFF.@SCRATCH2
+024     @ADDFF.@SCRATCH5
+024     @DIV3232.@SCRATCH5
+025     @MULFF.@SCRATCH3
+025     @ADDFF.@SCRATCH6
+026     @ADDFF.@SCRATCH7
+027     @ADDFF.@SCRATCH8
+F7A.6   C2OUT
+F7B.6   C1OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P3
+FE9-FEA @READ_PROGRAM_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  LCD_INIT_STRING.call
+000014  LCD_INIT_STRING.data
+000018  @const679.call
+000028  @const684.call
+00003A  @const695.call
+000054  @const701.call
+000064  @delay_ms1
+00008C  lcd_send_nibble
+0000CA  lcd_send_byte
+000106  lcd_init
+000156  lcd_gotoxy
+000178  lcd_putc
+0001BA  @PSTRINGC_651
+0001DA  @SITOF
+000224  @MULFF
+000316  @ITOF
+00034E  @ADDFF
+0005B8  Temperatura
+0006E8  @PSTRINGCN_651
+000708  @FTOSD
+000746  @DIV3232
+0007D4  @PRINTF_L32D_651FPFPFR
+00098E  @PSTRINGCN_9600_31766_31767
+0009AE  @PRINTF_L32D_9600_31766_31767FPFPF
+000B30  MAIN
+000B30  @cinit1
+000B5C  @cinit2
+
+Project Directory:
+    D:\electronica\Ejemplos_Mplab\Sensor_T_77\temperaturaX.X\
+
+Project Files:
+    TEMP_RS232.c                                            [21-jul.-19 18:16  CRC=DDFD4362]
+    ..\..\..\..\Programas_varios\Microchip\PICC\devices\18F25k20.h [02-ene.-15 14:37  CRC=84C10DC4]
+    flex_lcd.c                                              [01-ago.-19 13:01  CRC=490B23EA]
+    sensor_TC77.h                                           [28-mar.-15 21:13  CRC=F9DAA368]
+
+Source signature=9F7EBBE0
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=B729
+
+Units:
+    TEMP_RS232 (main)
+
+Compiler Settings:
+    Processor:      PIC18F25K20
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+    Predefined symbols:
+       #define __18F25K20 1
+
+Output Files:
+    XREF file:   build\default\production\TEMP_RS232.xsym
+    Errors:      build\default\production\TEMP_RS232.err
+    Ext Symbols: build\default\production\TEMP_RS232.esym
+    INHX32:      build\default\production\TEMP_RS232.hex
+    Symbols:     build\default\production\TEMP_RS232.sym
+    List:        build\default\production\TEMP_RS232.lst
+    Debug/COFF:  build\default\production\TEMP_RS232.cof
+    Project:     TEMP_RS232.ccspjt
+    Call Tree:   build\default\production\TEMP_RS232.tre
+    Statistics:  build\default\production\TEMP_RS232.STA

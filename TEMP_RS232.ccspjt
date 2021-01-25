@@ -1,14 +1,18 @@
 [PROJECT]
-Target=build\default\production\_ext\1472\TEMP_RS232.hex
+Target=build\default\production\TEMP_RS232.hex
 Processor_Text=PIC18F25K20
 CCSVersion=5.036
 Compiler=PCH
 [Target Data]
-FileList=..\TEMP_RS232.c
+FileList=TEMP_RS232.c
 [build\default\production\_ext\1472\TEMP_RS232.c]
 Type=4
 [mru-list]
-1=build\default\production\_ext\1472\TEMP_RS232.c
+1=build\default\production\TEMP_RS232.c
+[build\default\production\_ext\247384623\TEMP_RS232.c]
+Type=4
+[build\default\production\TEMP_RS232.c]
+Type=4
 [Units]
 Count=1
 1=TEMP_RS232 (main)

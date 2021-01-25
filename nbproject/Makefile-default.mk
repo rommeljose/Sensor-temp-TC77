@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=../TEMP_RS232.c
+SOURCEFILES_QUOTED_IF_SPACED=TEMP_RS232.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/1472/TEMP_RS232.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/1472/TEMP_RS232.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/TEMP_RS232.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/TEMP_RS232.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/_ext/1472/TEMP_RS232.o
+OBJECTFILES=${OBJECTDIR}/TEMP_RS232.o
 
 # Source Files
-SOURCEFILES=../TEMP_RS232.c
+SOURCEFILES=TEMP_RS232.c
 
 
 CFLAGS=
@@ -97,28 +97,28 @@ sourceline.gcccompat=sourceline="\#device ANSI" sourceline="\#device PASS_STRING
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/_ext/1472/TEMP_RS232.o: ../TEMP_RS232.c  nbproject/Makefile-${CND_CONF}.mk
-	${MKDIR} ${OBJECTDIR}/_ext/1472 
+${OBJECTDIR}/TEMP_RS232.o: TEMP_RS232.c  nbproject/Makefile-${CND_CONF}.mk
+	${MKDIR} ${OBJECTDIR} 
 ifeq (1,1) 
 	${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_CC}  out="${OBJECTDIR}\_ext\1472"  ../TEMP_RS232.c +FH +DF +CC #__DEBUG=1 +ICD +Y=9 +EA I+="..\..\Libreria" +DF +LN +T +A +M +J +Z -P #__18F25K20=1 
-	@mv ${OBJECTDIR}/_ext/1472/TEMP_RS232.cof "dist/${CND_CONF}/${IMAGE_TYPE}/temperaturaX.X.${IMAGE_TYPE}.cof" 
-	@mv ${OBJECTDIR}/_ext/1472/TEMP_RS232.hex "dist/${CND_CONF}/${IMAGE_TYPE}/temperaturaX.X.${IMAGE_TYPE}.hex"
+	${MP_CC}  out="${OBJECTDIR}"  TEMP_RS232.c +FH +DF +CC #__DEBUG=1 +ICD +Y=9 +EA +DF +LN +T +A +M +J +Z -P #__18F25K20=1 
+	@mv ${OBJECTDIR}/TEMP_RS232.cof "dist/${CND_CONF}/${IMAGE_TYPE}/temperaturaX.X.${IMAGE_TYPE}.cof" 
+	@mv ${OBJECTDIR}/TEMP_RS232.hex "dist/${CND_CONF}/${IMAGE_TYPE}/temperaturaX.X.${IMAGE_TYPE}.hex"
 else 
-	${MP_CC}  out=""${OBJECTDIR}\_ext\1472"" ../TEMP_RS232.c +EXPORT +FH +DF +CC #__DEBUG=1 +ICD +Y=9 +EA I+="..\..\Libreria" +DF +LN +T +A +M +J +Z -P #__18F25K20=1 +EXPORTD="${OBJECTDIR}/_ext/1472"  
+	${MP_CC}  out=""${OBJECTDIR}"" TEMP_RS232.c +EXPORT +FH +DF +CC #__DEBUG=1 +ICD +Y=9 +EA +DF +LN +T +A +M +J +Z -P #__18F25K20=1 +EXPORTD="${OBJECTDIR}"  
 	
 endif 
 	
 else
-${OBJECTDIR}/_ext/1472/TEMP_RS232.o: ../TEMP_RS232.c  nbproject/Makefile-${CND_CONF}.mk
-	${MKDIR} ${OBJECTDIR}/_ext/1472 
+${OBJECTDIR}/TEMP_RS232.o: TEMP_RS232.c  nbproject/Makefile-${CND_CONF}.mk
+	${MKDIR} ${OBJECTDIR} 
 ifeq (1,1) 
 	${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_CC}  out="${OBJECTDIR}\_ext\1472"  ../TEMP_RS232.c +FH +DF +CC +Y=9 +EA I+="..\..\Libreria" +DF +LN +T +A +M +J +Z -P #__18F25K20=1 
-	@mv ${OBJECTDIR}/_ext/1472/TEMP_RS232.cof "dist/${CND_CONF}/${IMAGE_TYPE}/temperaturaX.X.${IMAGE_TYPE}.cof" 
-	@mv ${OBJECTDIR}/_ext/1472/TEMP_RS232.hex "dist/${CND_CONF}/${IMAGE_TYPE}/temperaturaX.X.${IMAGE_TYPE}.hex"
+	${MP_CC}  out="${OBJECTDIR}"  TEMP_RS232.c +FH +DF +CC +Y=9 +EA +DF +LN +T +A +M +J +Z -P #__18F25K20=1 
+	@mv ${OBJECTDIR}/TEMP_RS232.cof "dist/${CND_CONF}/${IMAGE_TYPE}/temperaturaX.X.${IMAGE_TYPE}.cof" 
+	@mv ${OBJECTDIR}/TEMP_RS232.hex "dist/${CND_CONF}/${IMAGE_TYPE}/temperaturaX.X.${IMAGE_TYPE}.hex"
 else 
-	${MP_CC}  out=""${OBJECTDIR}\_ext\1472"" ../TEMP_RS232.c +EXPORT +FH +DF +CC +Y=9 +EA I+="..\..\Libreria" +DF +LN +T +A +M +J +Z -P #__18F25K20=1 +EXPORTD="${OBJECTDIR}/_ext/1472"  
+	${MP_CC}  out=""${OBJECTDIR}"" TEMP_RS232.c +EXPORT +FH +DF +CC +Y=9 +EA +DF +LN +T +A +M +J +Z -P #__18F25K20=1 +EXPORTD="${OBJECTDIR}"  
 	
 endif 
 	
@@ -132,7 +132,7 @@ dist/${CND_CONF}/${IMAGE_TYPE}/temperaturaX.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${
 ifeq (1,1) 
 	
 else 
-	${MP_LD}   out="dist/${CND_CONF}/${IMAGE_TYPE}"  +FH +DF +CC LINK=temperaturaX.X.${IMAGE_TYPE}.hex=${OBJECTDIR}/_ext/1472/TEMP_RS232.o +Y=9 +EA I+="..\..\Libreria" +DF +LN +T +A +M +J +Z -P
+	${MP_LD}   out="dist/${CND_CONF}/${IMAGE_TYPE}"  +FH +DF +CC LINK=temperaturaX.X.${IMAGE_TYPE}.hex=${OBJECTDIR}/TEMP_RS232.o +Y=9 +EA +DF +LN +T +A +M +J +Z -P
 	
 endif 
 	
@@ -142,7 +142,7 @@ dist/${CND_CONF}/${IMAGE_TYPE}/temperaturaX.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${
 ifeq (1,1) 
 	
 else 
-	${MP_LD}   out="dist/${CND_CONF}/${IMAGE_TYPE}"  +FH +DF +CC LINK=temperaturaX.X.${IMAGE_TYPE}.hex=${OBJECTDIR}/_ext/1472/TEMP_RS232.o +Y=9 +EA I+="..\..\Libreria" +DF +LN +T +A +M +J +Z -P
+	${MP_LD}   out="dist/${CND_CONF}/${IMAGE_TYPE}"  +FH +DF +CC LINK=temperaturaX.X.${IMAGE_TYPE}.hex=${OBJECTDIR}/TEMP_RS232.o +Y=9 +EA +DF +LN +T +A +M +J +Z -P
 	
 endif 
 	

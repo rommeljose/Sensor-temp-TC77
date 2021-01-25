@@ -24,7 +24,6 @@
   </logicalFolder>
   <sourceRootList>
     <Elem>..</Elem>
-    <Elem>..\..\Libreria</Elem>
     <Elem>E:/prueba_TC77/Sensor-temp-TC77</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>

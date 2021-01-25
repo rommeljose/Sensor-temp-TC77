@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=temperaturaX.X
+PROJECTNAME=Sensor-temp-TC77
 
 # Active Configuration
 DEFAULTCONF=default

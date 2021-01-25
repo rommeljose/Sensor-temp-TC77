@@ -30,12 +30,12 @@ ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 IMAGE_TYPE=debug
 OUTPUT_SUFFIX=cof
 DEBUGGABLE_SUFFIX=cof
-FINAL_IMAGE=dist/${CND_CONF}/${IMAGE_TYPE}/temperaturaX.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+FINAL_IMAGE=dist/${CND_CONF}/${IMAGE_TYPE}/Sensor-temp-TC77.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 else
 IMAGE_TYPE=production
 OUTPUT_SUFFIX=hex
 DEBUGGABLE_SUFFIX=cof
-FINAL_IMAGE=dist/${CND_CONF}/${IMAGE_TYPE}/temperaturaX.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+FINAL_IMAGE=dist/${CND_CONF}/${IMAGE_TYPE}/Sensor-temp-TC77.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 endif
 
 ifeq ($(COMPARE_BUILD), true)
@@ -87,7 +87,7 @@ FIXDEPS=fixDeps
 ifneq ($(INFORMATION_MESSAGE), )
 	@echo $(INFORMATION_MESSAGE)
 endif
-	${MAKE}  -f nbproject/Makefile-default.mk dist/${CND_CONF}/${IMAGE_TYPE}/temperaturaX.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+	${MAKE}  -f nbproject/Makefile-default.mk dist/${CND_CONF}/${IMAGE_TYPE}/Sensor-temp-TC77.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 
 MP_CC="D:\PROGRA~1\MICROC~1\PICC\CCSCON.exe"
 MP_LD="D:\PROGRA~1\MICROC~1\PICC\CCSCON.exe"
@@ -102,8 +102,8 @@ ${OBJECTDIR}/TEMP_RS232.o: TEMP_RS232.c  nbproject/Makefile-${CND_CONF}.mk
 ifeq (1,1) 
 	${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
 	${MP_CC}  out="${OBJECTDIR}"  TEMP_RS232.c +FH +DF +CC #__DEBUG=1 +ICD +Y=9 +EA +DF +LN +T +A +M +J +Z -P #__18F25K20=1 
-	@mv ${OBJECTDIR}/TEMP_RS232.cof "dist/${CND_CONF}/${IMAGE_TYPE}/temperaturaX.X.${IMAGE_TYPE}.cof" 
-	@mv ${OBJECTDIR}/TEMP_RS232.hex "dist/${CND_CONF}/${IMAGE_TYPE}/temperaturaX.X.${IMAGE_TYPE}.hex"
+	@mv ${OBJECTDIR}/TEMP_RS232.cof "dist/${CND_CONF}/${IMAGE_TYPE}/Sensor-temp-TC77.${IMAGE_TYPE}.cof" 
+	@mv ${OBJECTDIR}/TEMP_RS232.hex "dist/${CND_CONF}/${IMAGE_TYPE}/Sensor-temp-TC77.${IMAGE_TYPE}.hex"
 else 
 	${MP_CC}  out=""${OBJECTDIR}"" TEMP_RS232.c +EXPORT +FH +DF +CC #__DEBUG=1 +ICD +Y=9 +EA +DF +LN +T +A +M +J +Z -P #__18F25K20=1 +EXPORTD="${OBJECTDIR}"  
 	
@@ -115,8 +115,8 @@ ${OBJECTDIR}/TEMP_RS232.o: TEMP_RS232.c  nbproject/Makefile-${CND_CONF}.mk
 ifeq (1,1) 
 	${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
 	${MP_CC}  out="${OBJECTDIR}"  TEMP_RS232.c +FH +DF +CC +Y=9 +EA +DF +LN +T +A +M +J +Z -P #__18F25K20=1 
-	@mv ${OBJECTDIR}/TEMP_RS232.cof "dist/${CND_CONF}/${IMAGE_TYPE}/temperaturaX.X.${IMAGE_TYPE}.cof" 
-	@mv ${OBJECTDIR}/TEMP_RS232.hex "dist/${CND_CONF}/${IMAGE_TYPE}/temperaturaX.X.${IMAGE_TYPE}.hex"
+	@mv ${OBJECTDIR}/TEMP_RS232.cof "dist/${CND_CONF}/${IMAGE_TYPE}/Sensor-temp-TC77.${IMAGE_TYPE}.cof" 
+	@mv ${OBJECTDIR}/TEMP_RS232.hex "dist/${CND_CONF}/${IMAGE_TYPE}/Sensor-temp-TC77.${IMAGE_TYPE}.hex"
 else 
 	${MP_CC}  out=""${OBJECTDIR}"" TEMP_RS232.c +EXPORT +FH +DF +CC +Y=9 +EA +DF +LN +T +A +M +J +Z -P #__18F25K20=1 +EXPORTD="${OBJECTDIR}"  
 	
@@ -127,22 +127,22 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: link
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-dist/${CND_CONF}/${IMAGE_TYPE}/temperaturaX.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
+dist/${CND_CONF}/${IMAGE_TYPE}/Sensor-temp-TC77.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
 	${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
 ifeq (1,1) 
 	
 else 
-	${MP_LD}   out="dist/${CND_CONF}/${IMAGE_TYPE}"  +FH +DF +CC LINK=temperaturaX.X.${IMAGE_TYPE}.hex=${OBJECTDIR}/TEMP_RS232.o +Y=9 +EA +DF +LN +T +A +M +J +Z -P
+	${MP_LD}   out="dist/${CND_CONF}/${IMAGE_TYPE}"  +FH +DF +CC LINK=Sensor-temp-TC77.${IMAGE_TYPE}.hex=${OBJECTDIR}/TEMP_RS232.o +Y=9 +EA +DF +LN +T +A +M +J +Z -P
 	
 endif 
 	
 else
-dist/${CND_CONF}/${IMAGE_TYPE}/temperaturaX.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
+dist/${CND_CONF}/${IMAGE_TYPE}/Sensor-temp-TC77.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
 ifeq (1,1) 
 	
 else 
-	${MP_LD}   out="dist/${CND_CONF}/${IMAGE_TYPE}"  +FH +DF +CC LINK=temperaturaX.X.${IMAGE_TYPE}.hex=${OBJECTDIR}/TEMP_RS232.o +Y=9 +EA +DF +LN +T +A +M +J +Z -P
+	${MP_LD}   out="dist/${CND_CONF}/${IMAGE_TYPE}"  +FH +DF +CC LINK=Sensor-temp-TC77.${IMAGE_TYPE}.hex=${OBJECTDIR}/TEMP_RS232.o +Y=9 +EA +DF +LN +T +A +M +J +Z -P
 	
 endif 
 	

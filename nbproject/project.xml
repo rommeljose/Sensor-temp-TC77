@@ -14,7 +14,6 @@
             <make-dep-projects/>
             <sourceRootList>
                 <sourceRootElem>..</sourceRootElem>
-                <sourceRootElem>..\..\Libreria</sourceRootElem>
                 <sourceRootElem>E:/prueba_TC77/Sensor-temp-TC77</sourceRootElem>
             </sourceRootList>
             <confList>

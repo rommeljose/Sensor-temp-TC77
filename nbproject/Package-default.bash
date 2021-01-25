@@ -10,9 +10,9 @@ CND_CONF=default
 CND_DISTDIR=dist
 TMPDIR=build/${CND_CONF}/${IMAGE_TYPE}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/temperaturaX.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-OUTPUT_BASENAME=temperaturaX.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-PACKAGE_TOP_DIR=temperaturax.x/
+OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/Sensor-temp-TC77.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+OUTPUT_BASENAME=Sensor-temp-TC77.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+PACKAGE_TOP_DIR=sensor-temp-tc77/
 
 # Functions
 function checkReturnCode
@@ -57,15 +57,15 @@ mkdir -p ${TMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory ${TMPDIR}/temperaturax.x/bin
+makeDirectory ${TMPDIR}/sensor-temp-tc77/bin
 copyFileToTmpDir "${OUTPUT_PATH}" "${TMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/package/temperaturax.x.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/package/sensor-temp-tc77.tar
 cd ${TMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/temperaturax.x.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/sensor-temp-tc77.tar *
 checkReturnCode
 
 # Cleanup

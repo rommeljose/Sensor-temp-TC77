@@ -1,0 +1,14 @@
+[PROJECT]
+Target=build\default\production\_ext\1472\sensor_TC77.hex
+Processor_Text=PIC18F25K20
+CCSVersion=5.036
+Compiler=PCH
+[Target Data]
+FileList=..\sensor_TC77.c
+[build\default\production\_ext\1472\sensor_TC77.c]
+Type=4
+[mru-list]
+1=build\default\production\_ext\1472\sensor_TC77.c
+[Units]
+Count=1
+1=sensor_TC77 (main)
